@@ -1,6 +1,6 @@
 # GraphQL/REST API Demo
 
-A demo of what an equivalent REST API and GraphQL interface look like. This code is used in the first chapter of the forthcoming [The GraphQL Guide](https://graphql.guide/) by [John Resig](https://johnresig/) and [Loren Sands-Ramshaw](http://lorensr.me/).
+A demo of what an equivalent REST API and GraphQL interface look like. This code is used in the first chapter of the forthcoming [The GraphQL Guide](https://graphql.guide/) by [John Resig](https://johnresig.com/) and [Loren Sands-Ramshaw](http://lorensr.me/).
 
 ## Installation
 
