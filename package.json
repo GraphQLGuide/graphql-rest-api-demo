@@ -1,11 +1,10 @@
 {
   "name": "graphql-rest-api-demo",
   "version": "0.0.1",
-  "description":
-    "A demo of what an equivalent REST API and GraphQL interface look like.",
+  "description": "A demo of what an equivalent REST API and GraphQL interface look like.",
   "main": "graphql-server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prettify": "prettier --write *.js"
   },
   "author": "John Resig <jeresig@gmail.com>",
   "license": "MIT",
@@ -14,5 +13,8 @@
     "express-graphql": "^0.6.11",
     "graphql": "^0.11.7",
     "mongoose": "^4.13.5"
+  },
+  "devDependencies": {
+    "prettier": "1.9.2"
   }
 }
