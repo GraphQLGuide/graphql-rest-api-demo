@@ -1,6 +1,6 @@
 'use strict'
 const express = require('express')
-const app = express()
+const server = express()
 
 // Get the Mongoose models used for querying the database
 const { User } = require('./models.js')
@@ -32,7 +32,7 @@ const filterFields = async function(req, user) {
 
 // Listen for all GET requests to /users/:id URL (where the
 // ID is the ID of the user account)
-app.get('/users/:id', (req, res) => {
+server.get('/users/:id', (req, res) => {
   // Try to find the user by their id (_id field), using the ID
   // parameter from the URL.
   User.findById(req.params.id, async (err, user) => {
@@ -54,7 +54,7 @@ app.get('/users/:id', (req, res) => {
 })
 
 // Listen for all GET requests to /users
-app.get('/users', (req, res) => {
+server.get('/users', (req, res) => {
   // Find all of the users in the database collection (we pass in
   // an empty collection as we aren't filtering the results)
   User.find({}, async (err, users) => {
@@ -73,4 +73,4 @@ app.get('/users', (req, res) => {
 })
 
 // Start the application, listening on port 3000
-app.listen(3000)
+server.listen(3000)

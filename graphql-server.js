@@ -2,13 +2,13 @@
 const graphqlHTTP = require('express-graphql')
 const { buildSchema } = require('graphql')
 const express = require('express')
-const app = express()
+const server = express()
 
 // Get the Mongoose models used for querying the database
 const { User, Group } = require('./models.js')
 
 // Start up a GraphQL endpoint listening at /graphql
-app.use(
+server.use(
   '/graphql',
   graphqlHTTP({
     // We construct our GraphQL schema which has three types:
@@ -59,4 +59,4 @@ app.use(
 )
 
 // Start the application, listening on port 3000
-app.listen(3000)
+server.listen(3000)
