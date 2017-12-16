@@ -33,7 +33,7 @@ server.use(
             groups: [Group]
         }
     `),
-    // The methods that we'll use to get the data for our
+    // The query fields that we'll use to get the data for our
     // main queries
     rootValue: {
       // Get a user based on the ID and return it as a Promise
