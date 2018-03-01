@@ -11,7 +11,7 @@ const defaultFields = ['_id', 'username', 'group']
 // Filter a user object based on the requested fields
 const filterFields = async function(req, user) {
   // We assume the fields are a comma-separated list of field
-  // names, if none is specified then we return all fields.
+  // names. If none are specified, we return all fields.
   const fieldKeys = req.query.fields
     ? req.query.fields.split(',')
     : defaultFields
