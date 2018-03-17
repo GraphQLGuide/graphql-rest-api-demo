@@ -12,7 +12,9 @@ You'll also want to populate the database with some data to test your queries. Y
 
 ```
 db.users.insert({_id: "123", username: "jeresig", groupId: "dev"})
+db.users.insert({_id: "456", username: "lorensr", groupId: "author"})
 db.groups.insert({_id: "dev", name: "Developers"})
+db.groups.insert({_id: "author", name: "Authors"})
 ```
 
 By default the servers are expecting to find data on your local computer in a database named "testdb". You can configure this by changing the settings in `models.js`.
