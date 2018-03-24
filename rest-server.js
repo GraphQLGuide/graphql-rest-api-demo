@@ -20,7 +20,7 @@ const filterFields = async function(req, user) {
   const filteredUser = {}
   for (const field of fieldKeys) {
     // If the field is a function then we expect it to return
-    // a promise which we will immediately resolve.
+    // a Promise which we will immediately resolve.
     if (typeof user[field] === 'function') {
       filteredUser[field] = await user[field]()
     } else {
