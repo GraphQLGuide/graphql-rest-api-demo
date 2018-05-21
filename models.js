@@ -4,9 +4,6 @@ const mongoose = require('mongoose')
 // Connect to the local MongoDB database named “testdb”
 mongoose.connect('mongodb://localhost/testdb')
 
-// Use real promises
-mongoose.Promise = global.Promise
-
 // Create a Group schema to be stored in the MongoDB database
 const GroupSchema = new mongoose.Schema({
   _id: String,
