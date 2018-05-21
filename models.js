@@ -2,7 +2,7 @@
 const mongoose = require('mongoose')
 
 // Connect to the local MongoDB database named “testdb”
-mongoose.connect('mongodb://localhost/testdb', { useMongoClient: true })
+mongoose.connect('mongodb://localhost/testdb')
 
 // Use real promises
 mongoose.Promise = global.Promise
