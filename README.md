@@ -6,7 +6,7 @@ A demo of what an equivalent REST API and GraphQL interface look like. This code
 
 To install you'll want to run `npm install` or `yarn` to install all of the Node modules.
 
-Additionally, you'll need to have a copy of [MongoDB](https://www.mongodb.com/) running. If you're on OSX you can use [Homebrew](https://brew.sh/) to install MongoDB by running: `brew install mongodb`. That should also start the database server in the background, as well. If it's not running you can run `brew services stop mongodb` to start it.
+Additionally, you'll need to have a copy of [MongoDB](https://www.mongodb.com/) running. If you're on OSX you can use [Homebrew](https://brew.sh/) to install MongoDB by running: `brew install mongodb`. That should also start the database server in the background, as well. If it's not running you can run `brew services start mongodb` to start it.
 
 You'll also want to populate the database with some data to test your queries. You can do this by running the `mongo testdb` command on the command-line and executing the following commands to create a new database, some collections, and the data inside of them:
 
@@ -21,9 +21,7 @@ By default the servers are expecting to find data on your local computer in a da
 
 ## Data Models
 
-
 Our data models representing the MongoDB database are in `models.js`. We use [Mongoose](http://mongoosejs.com/) to do the object modeling and provide a convenient way of accessing and mutating the data in the MongoDB collections.
-
 
 ## REST API
 

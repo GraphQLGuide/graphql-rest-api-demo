@@ -4,6 +4,8 @@
   "description": "A demo of what an equivalent REST API and GraphQL interface look like.",
   "main": "graphql-server.js",
   "scripts": {
+    "start": "node graphql-server.js",
+    "start-rest": "node rest-server.js",
     "prettify": "prettier --write *.js"
   },
   "author": "John Resig <jeresig@gmail.com>",

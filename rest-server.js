@@ -66,11 +66,18 @@ server.get('/users', (req, res) => {
     // Return the array of users to the client (automatically
     // serialized as a JSON string) We need to wait for all
     // of the Promises to resolve for all of the users.
-    res.send(
-      await Promise.all(users.map(async user => await filterFields(req, user)))
-    )
+    res.send(await Promise.all(users.map(user => filterFields(req, user))))
   })
 })
 
 // Start the application, listening on port 3000
-server.listen(3000)
+server.listen(3000, () =>
+  console.log(`Listening on port 3000. Try:
+
+http://localhost:3000/users/123
+
+or 
+
+http://localhost:3000/users
+`)
+)
