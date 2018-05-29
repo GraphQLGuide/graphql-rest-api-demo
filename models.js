@@ -1,8 +1,12 @@
 'use strict'
 const mongoose = require('mongoose')
 
+const inDevelopment = process.env.NODE_ENV !== 'production'
+
 // Connect to the local MongoDB database named “testdb”
-mongoose.connect('mongodb://localhost/testdb')
+mongoose.connect(
+  inDevelopment ? 'mongodb://localhost/testdb' : process.env.MONGO_URL
+)
 
 // Create a Group schema to be stored in the MongoDB database
 const GroupSchema = new mongoose.Schema({

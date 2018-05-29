@@ -1,12 +1,19 @@
 {
   "name": "graphql-rest-api-demo",
   "version": "0.0.1",
-  "description": "A demo of what an equivalent REST API and GraphQL interface look like.",
+  "description":
+    "A demo of what an equivalent REST API and GraphQL interface look like.",
   "main": "graphql-server.js",
   "scripts": {
     "start": "node graphql-server.js",
     "start-rest": "node rest-server.js",
-    "prettify": "prettier --write *.js"
+    "prettify": "prettier --write *.js",
+    "deploy": "now -e NODE_ENV=production -e MONGO_URL=@ch1-mongo-url",
+    "alias": "now alias"
+  },
+  "now": {
+    "name": "guide-ch1",
+    "alias": "ch1.graphql.guide"
   },
   "author": "John Resig <jeresig@gmail.com>",
   "license": "MIT",

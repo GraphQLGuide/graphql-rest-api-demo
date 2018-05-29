@@ -1,6 +1,8 @@
 # GraphQL/REST API Demo
 
-A demo of what an equivalent REST API and GraphQL interface look like. This code is used in the first chapter of the forthcoming [The GraphQL Guide](https://graphql.guide/) by [John Resig](https://johnresig.com/) and [Loren Sands-Ramshaw](http://lorensr.me/).
+A demo of what an equivalent REST API and GraphQL API look like. This code is used in the first chapter of [The GraphQL Guide](https://graphql.guide/) by [John Resig](https://johnresig.com/) and [Loren Sands-Ramshaw](http://lorensr.me/). Here's the GraphQL server's GraphiQL:
+
+[ch1.graphql.guide/graphql](https://ch1.graphql.guide/graphql)
 
 ## Installation
 
@@ -35,8 +37,8 @@ node rest-server.js
 
 You can access the REST API by opening your browser and visiting either of the following URLs:
 
-* [http://localhost:3000/users](http://localhost:3000/users) - All users.
-* [http://localhost:3000/users/123](http://localhost:3000/users/123) - An individual user record.
+* [localhost:3000/users](http://localhost:3000/users) - All users.
+* [localhost:3000/users/123](http://localhost:3000/users/123) - An individual user record.
 
 ## GraphQL Server
 
@@ -50,6 +52,6 @@ node graphql-server.js
 
 You can access the GraphQL data by opening your browser and visiting the [GraphiQL](https://github.com/graphql/graphiql) view at:
 
-* [http://localhost:3000/graphql](http://localhost:3000/graphql)
+* [localhost:3000/graphql](http://localhost:3000/graphql)
 
 You should see a console interface into which you can run GraphQL queries and see their results. You should also be able to browse the full schema and see all of the types that are available to you and what data they provide.
