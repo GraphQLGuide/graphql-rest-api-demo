@@ -16,21 +16,21 @@ server.use(
     // queries for data are defined)
     schema: buildSchema(`
         type Group {
-            _id: String
-            name: String
+          _id: String
+          name: String
         }
 
         type User {
-            _id: String
-            username: String
-            group: Group
+          _id: String
+          username: String
+          group: Group
         }
 
         type Query {
-            user(id: String!): User
-            users: [User]
-            group(id: String!): Group
-            groups: [Group]
+          user(id: String!): User
+          users: [User]
+          group(id: String!): Group
+          groups: [Group]
         }
     `),
     // The query fields that we'll use to get the data for our
